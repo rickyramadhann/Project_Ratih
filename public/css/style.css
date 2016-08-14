@@ -1,0 +1,278 @@
+/* TEMPLATE STYLES */
+
+
+/*Main layout*/
+
+body{
+   background-color: RGBA(254, 254, 254, 0.35);
+}
+
+main,
+footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    main {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-wrapper {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    main {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main-wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    main {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .main-wrapper {
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}
+
+
+/*Extra layout*/
+
+.section-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.mdb-color {
+      background-color: #33cccc !important;
+}
+
+.tagline{
+   font-size: 30px;
+   font-family: 'Source Sans Pro', sans serif;
+   color: #fff;
+}
+
+
+
+.tagline:hover{
+   color:#2A2A26;
+}
+
+tagline:focus{
+   outline: thin dotted;
+}
+
+.about h4{
+   color: #fff;
+}
+
+a:hover{
+   background-color: #33cccc !important;
+}
+
+.side-nav .logo-wrapper a {
+    background-color: #222930 !important;
+}
+
+/*********************
+SideNav
+**********************/
+.side-nav {
+  background-color: #222930;
+}
+
+.side-nav .logo-wrapper {
+    background: #222930; !important;
+    height: 150px !important;
+}
+
+.side-nav .logo-wrapper a{
+
+}
+
+.personal-side-nav .logo-wrapper img{
+   min-width: 100px;
+   margin-top: 30px;
+}
+
+.personal-side-nav .logo-wrapper{
+   padding-left: 30%;
+}
+
+.side-nav .about{
+  text-align: center;
+}
+
+.side-nav li {
+   background-color: #222930;
+
+}
+
+.side-nav li:hover, .side-nav li.active {
+
+   background-color: #4BE1BA;
+
+}
+
+
+.side-nav p {
+  color: #fff;
+}
+
+.side-nav .collapsible a {
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.
+
+.side-nav .collapsible a.active {
+    background-color: #4BE1BA;
+}
+
+.stylish-side-nav .collapsible a.active{
+      background-color: #4BE1BA;
+}
+
+.side-nav .social {
+  border-top: 1px solid #2D384E;
+  border-bottom: 1px solid #2D384E;
+}
+
+.side-nav .social a {
+  color: #fff;
+}
+
+.mini_divider {
+    border: 1px dashed #43443F;
+    width: 90%;
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+
+/*********************
+  TEMPLATE COLORS
+**********************/
+.pt-color {
+  background-color: #45526E !important;
+}
+
+.st-color {
+  background-color: #1C2331 !important;
+}
+
+.et-color {
+  background-color: #3F729B !important;
+}
+
+.btn-ptc {
+  background-color: #45526E !important;
+}
+
+.btn-ptc:hover {
+  background-color: #59698d !important;
+}
+
+.btn-ptc:focus {
+  background-color: #59698d !important;
+}
+
+.btn-stc {
+  background-color: #1C2331 !important;
+}
+
+.btn-stc:hover {
+  background-color: #2f3a51 !important;
+}
+
+.btn-stc:focus {
+  background-color: #2f3a51 !important;
+}
+
+.btn-cari {
+    margin-top: 20px;
+       background-color: #4BE1BA;
+}
+.ch-cari {
+      background-color: #4BE1BA;
+}
+
+/*Extra layout*/
+
+.section-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.widget-wrapper {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+
+/*Article*/
+.view img{
+   width: 100%;
+}
+
+.img-about{
+   height: 278px;
+}
+
+
+
+/*Gallery*/
+
+.jarakfoto{
+   margin-bottom: 1em;
+}
+
+
+#toTop {
+    display: block;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 40px;
+    height: 22px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/move-top.png) no-repeat 0px 0px;
+}
+
+
+/*admin style*/
+
+
+.table td .btn{
+   margin: 0;
+}
