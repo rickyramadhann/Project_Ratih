@@ -19,9 +19,8 @@
                             <!--Post-->
                             <div class="post-wrapper">
                                 <!--Post data-->
-                                <h1 class="h1-responsive">{{$isi->Judul_Artikel}}</h1>
+                                <h1 class="h1-responsive">{{$isi->Judul_Materi}}</h1>
                                 <h5>Written by <a href="">{{$isi->Penulis}}</a>,<p> {{$isi->created_at}}<p></h5>
-
                                 <br>
 
                                 <!--Featured image -->
@@ -34,7 +33,7 @@
                                 <br>
 
                                 <!--Post excerpt-->
-                                <p>{{$isi->Isi_Artikel}}
+                                <p>{{$isi->Isi_Materi}}
                                 </p>
 
                                 <!--"Read more" button-->
@@ -75,8 +74,6 @@
 
                         </div>
                     </div>
-
-
                     <!--Right sidebar-->
                     <div class="col-md-4">
 
@@ -100,11 +97,12 @@
                             <h4>Categories:</h4>
                             <br>
                             <div class="list-group">
-                                <a href="#" class="list-group-item active">Dasar Pendidikan Kesehatan Masyarakat</a>
-                                <a href="#" class="list-group-item">Statistika</a>
-                                <a href="#" class="list-group-item">Gizi Anak</a>
-                                <a href="#" class="list-group-item">Ilmu Gizi</a>
-                                <a href="#" class="list-group-item">Ilmu Anak</a>
+
+                              @foreach($test2 as $testlagi)
+                                <a href="#" class="list-group-item active">{{$testlagi->Nama_SubKategori}}</a>
+                              @endforeach
+
+
                             </div>
                         </div>
 

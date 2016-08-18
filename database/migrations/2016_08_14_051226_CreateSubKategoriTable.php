@@ -15,7 +15,8 @@ class CreateSubKategoriTable extends Migration
       Schema::create('SubKategori', function (Blueprint $table) {
           $table->increments('Id_SubKategori');
           $table->string('Nama_SubKategori');
-          $table->string('Id_Kategori');
+          $table->integer('Id_Kategori');
+          $table->foreign('Id_Kategori')->reference('Id_Kategori')->on('Kategori')->onDelete('CASCADE');
 
       });
     }

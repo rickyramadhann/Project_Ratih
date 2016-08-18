@@ -105,13 +105,14 @@
 
                                    <select class="form-control" name="kategori">
                                        <option value="Perkuliahan">Perkuliahan</option>
-                                       <option value="2">2</option>
-                                       <option>3</option>
-                                       <option>4</option>
-                                       <option>5</option>
+                                       <option value="Karya Tulis">Karya Tulis</option>
                                    </select>
 
                                    {{ csrf_field() }}
+                                    <div class="form-group">
+                                        <label for="Judul">Sub Kategori</label>
+                                        <input type="text" class="form-control" name="SubKategori" id="SubKategori" placeholder="Sub Kategori">
+                                    </div>
                                     <div class="form-group">
                                         <label for="Judul">Judul Artikel</label>
                                         <input type="text" class="form-control" name="judul" id="judul" placeholder="Judul">

@@ -11,8 +11,8 @@ class GalleryController extends Controller
 {
     //
     public function Gallery(){
-      $judul = DB::table('Artikel')->get();
-     return view('Gallery', ['judul' => $judul]);
+      $judul = DB::table('Kategori')->get();
+     return view('Gallery', ['Nama_Kategori' => $judul]);
 
    }
 }

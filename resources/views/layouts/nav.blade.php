@@ -58,10 +58,9 @@
                 <li><a class="collapsible-header waves-effect">Artikel</a>
                     <div class="collapsible-body">
                         <ul>
-                           @foreach($kategori as $j)
-                             <li><a href="{{url ('/Category') }}" class="waves-effect">{{ $j->Kategori }}</a></li>
+                           @foreach($Nama_Kategori as $j)
+                             <li><a href="{{url ('/Category') }}" class="waves-effect">{{ $j->Nama_Kategori }}</a></li>
                           @endforeach
-                           <li><a href="{{ $j->Id }}" class="waves-effect">Dr.Mirriam Stoppard</a></li>
                         </ul>
                     </div>
                 </li>

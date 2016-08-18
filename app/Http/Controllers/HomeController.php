@@ -26,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $kategori = DB::table('Artikel')->get();
-     return view('home', ['kategori' => $kategori]);
+      $kategori = DB::table('Kategori')->get();
+     return view('home', ['Nama_Kategori' => $kategori]);
     }
 }

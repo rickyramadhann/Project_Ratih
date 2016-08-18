@@ -112,18 +112,18 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                       @foreach($Judul_Artikel as $judul)
+                                       @foreach($records as $record)
 
                                         <tr>
                                             <th scope="row"></th>
                                             <td>111</td>
-                                            <td>{{$judul->Judul_Artikel}}</td>
-                                            <td>{{$judul->Penulis}}</td>
-                                            <td>{{$judul->Kategori}}</td>
-                                            <td>{{$judul->created_at}}</td>
+                                            <td>{{$record->Judul_Materi}}</td>
+                                            <td>{{$record->Penulis}}</td>
+                                            <td>{{$record->Kategori}}</td>
+                                            <td>{{$record->created_at}}</td>
                                             <td class="do">
                                                 <a class="btn btn-default"><i class="fa fa-edit left"></i> Edit</a>
-                                                <a class="btn btn-default" href="hapus/{{ $judul->Id }}"><i class="fa fa-edit left"></i> Delete</a>
+                                                <a class="btn btn-default" href="hapus/{{ $record->Id }}"><i class="fa fa-edit left"></i> Delete</a>
 
                                             </td>
                                         </tr>

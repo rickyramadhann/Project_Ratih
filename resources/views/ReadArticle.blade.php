@@ -15,7 +15,7 @@
                             <div class="post-wrapper">
                                 <!--Post data-->
                               @foreach($test2 as $testlagi)
-                                <h1 class="h1-responsive">{{$testlagi->Judul_Artikel}}</h1>
+                                <h1 class="h1-responsive">{{$testlagi->Judul_Materi}}</h1>
                                 <h5>Written by <a href="">{{$testlagi->Penulis}}</a>,{{$testlagi->created_at}}</h5>
 
                                 <br>
@@ -31,7 +31,7 @@
 
                                 <!--Post excerpt-->
                                 <p>
-                                   {{$testlagi->Isi_Artikel}}
+                                   {{$testlagi->Isi_Materi}}
                                 </p>
 
                                 @endforeach

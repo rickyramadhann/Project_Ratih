@@ -15,7 +15,7 @@ class hapusController extends Controller
     public function hapus($id)
   {
 
-      $delete = DB::table('Artikel')->where('Id', $id)->delete();
+      $delete = DB::table('Materi')->where('Id', $id)->delete();
 
       //$delete->delete();
 

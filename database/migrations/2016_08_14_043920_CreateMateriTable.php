@@ -17,8 +17,10 @@ class CreateMateriTable extends Migration
           $table->string('Judul_Materi');
           $table->string('Isi_Materi');
           $table->string('Penulis');
-          $table->string('Id_Subkategori');
-
+          $table->string('Kategori');
+          $table->timestamps('created_at');
+          $table->integer('Id_Subkategori');
+          $table->foreign('Id_Subkategori')->reference('Id_SubKategori')->on('SubKategori')-onDelete('CASCADE');
       });
     }
 

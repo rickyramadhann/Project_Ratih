@@ -12,7 +12,7 @@ class SubKategoriSeeder extends Seeder
     public function run()
     {
       DB::table('SubKategori')->insert([
-           'Nama_SubKategori' => 'sdgjseugbsdrugvuy',
-      ]);
+          'Nama_SubKategori' => 'sdgjseugbsdrugvuy'
+     ]);
     }
 }
