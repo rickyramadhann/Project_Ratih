@@ -30,19 +30,24 @@ class CategoryController extends Controller
       $isi = $r->input('isi');
       $penulis = $r->input('penulis');
 
+      // Masukkan dulu sub kategorinya
+      // Ambil ID sub kategori yang baru dimasukkan dengan fungsi insertGetId
+      // Masukkan ID sub kategori ke table kategori
+
+      $masuk = DB::table('SubKategori')->insertGetId([
+           'Id_SubKategori' => null,
+           'Nama_SubKategori' => $SubKategori,
+      ]);
+
       DB::table('Materi')->insert([
           'Id' => null,
           'Judul_Materi' => $judul,
           'Isi_Materi' => $isi,
           'Penulis' => $penulis,
           'Kategori' => $kategori,
+          'Id_Subkategori' => $masuk
 
      ]);
-
-     DB::table('SubKategori')->insert([
-         'Id_SubKategori' => null,
-         'Nama_SubKategori' => $SubKategori,
-    ]);
       return redirect(url('Category'));
 
   }
